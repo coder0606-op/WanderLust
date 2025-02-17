@@ -1,0 +1,68 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+  <div class="col-8 offset-2">
+    <br>
+    <br>
+<h3>Create a New Listing</h3>
+<form method="POST" action="/listings">
+  <div class="mb-1">
+    <lable for="title" style="display: block" class="form-label">Title</lable>
+    <input style="width: 100%;
+      
+      height: 40px;" name="listing[title]" placeholder="enter title" type="text" />
+  </div>
+
+  <div class="mb-1">
+    <label  for="description" class="form-label"
+      >Description</label
+    >
+    <textarea
+      name="listing[description]"
+      placeholder="enter description"
+      style="width: 100%"
+    ></textarea>
+  </div>
+
+  <div class="mb-1">
+    <label for="image"  class="form-label">Image</label>
+    <input
+      name="listing[image]"
+      placeholder="enter image URL/Link"
+      type="text"
+      style="width: 100%;
+      
+      height: 40px;"
+    />
+  </div>
+  <div class="row">
+  <div class="mb-1 col-4">
+    <label for="price"  class="form-label">Price</label>
+    <input style="width: 100%;
+    height: 40px;" name="listing[price]" placeholder="enter price" type="number" />
+  </div>
+  <div class="mb-1 col-8">
+    <label for="country" style="display: block" class="form-label"
+      >Country</label
+    ><input style="width: 100%;
+      
+      height: 40px;" name="listing[country]" placeholder="enter country" type="text" />
+  </div></div>
+  <div class="mb-5">
+    <label for="location" style="display: block" class="form-label"
+      >Location</label
+    ><input
+      name="listing[location]"
+      placeholder="enter location"
+      type="text"
+      style="width: 100%;
+      
+      height: 40px;"
+    />
+  </div>
+
+
+  <button style="background-color: red;" class="btn btn-dark">Add</button></div>
+</form>
+</div>
+<br><br>
+
